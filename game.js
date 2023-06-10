@@ -233,7 +233,6 @@ function endGame(wonOrLost) {
   theGameStarted = false;
   switch (wonOrLost) {
     case "won":
-      console.log("¡Ganaste el Juego!");
       clearInterval(currentTimer);
       game.clearRect(0, 0, canvasSize, canvasSize);
       showGameWonMenu();
@@ -320,12 +319,12 @@ wonGameMenuContainer.classList.add("game-menu");
 wonGameMenuContainer.classList.add("inactive");
 
 const wonGameMenuTitle = document.createElement("h2");
-wonGameMenuTitle.innerText = "Ganaste";
+wonGameMenuTitle.innerText = "You won";
 wonGameMenuTitle.classList.add("game-menu__item");
 wonGameMenuTitle.classList.add("game-menu__item--title");
 
 const wonGameMenuTryAgainBtn = document.createElement("button");
-wonGameMenuTryAgainBtn.innerText = "Try again";
+wonGameMenuTryAgainBtn.innerText = "Beat record";
 wonGameMenuTryAgainBtn.classList.add("game-menu__item");
 wonGameMenuTryAgainBtn.classList.add("game-menu__item--btn");
 wonGameMenuTryAgainBtn.addEventListener("click", startGame);
