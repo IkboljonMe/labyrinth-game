@@ -1,0 +1,131 @@
+/* General Styles and Variables */
+:root {
+  --app-color: indigo;
+  --game-border: #ff6600;
+  --screen-color: #feff9d;
+  --btns-color: #fdef05;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+.body {
+  color: #fff;
+  background-color: var(--app-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+/* Game Screen */
+.game-screen-container {
+  position: relative;
+}
+.game-screen {
+  border-radius: 8px;
+  background-color: var(--screen-color);
+  border: 4px solid var(--game-border);
+}
+
+.game-menu {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.game-menu__item--title {
+  color: black;
+}
+.game-menu__item--btn {
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+/* Movement Btns */
+
+.movement-btn {
+  width: 100px;
+  padding: 5px 20px;
+  font-size: 18px;
+
+  border-radius: 8px;
+  border-color: var(--game-border);
+  background-color: var(--btns-color);
+}
+.movement-btn--up,
+.movement-btn--down {
+  display: block;
+  margin: 0px auto;
+  font-size: 19px;
+}
+.movement-btn--left,
+.movement-btn--right,
+.movement-btn--down {
+  margin-top: 5px;
+}
+
+@media (min-height: 600px) {
+  .movement-btn {
+    font-size: 3vh;
+  }
+  .movement-btn--up,
+  .movement-btn--down {
+    font-size: calc(3vh + 1px);
+  }
+}
+
+/* Game Stats */
+.game-stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.a-game-stat {
+  width: 100%;
+  margin: none;
+  display: block;
+}
+
+/* Shared */
+.game-screen-container,
+.movement-btns-container,
+.game-stats-container {
+  width: fit-content;
+}
+.movement-btns-container,
+.game-stats-container {
+  margin: 20px 15px 0px;
+}
+
+/* Responsive */
+@media (min-width: 400px) {
+}
+
+.inactive {
+  display: none;
+}
+.footer > p {
+  color: white;
+}
