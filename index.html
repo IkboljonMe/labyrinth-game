@@ -8,32 +8,38 @@
     <title>Labyrinth/Maze Game</title>
   </head>
   <body class="body">
-    <section class="game-screen-container">
-      <canvas class="game-screen" id="game"></canvas>
-    </section>
+    <header>
+      <p class="welcome">Welcome to Labyrinth game</p>
+    </header>
+    <div class="container">
+      <section class="game-screen-container">
+        <canvas class="game-screen" id="game"></canvas>
+      </section>
+      <section class="movement-btns-container">
+        <button id="up" class="movement-btn movement-btn--up">▲</button>
+        <button id="left" class="movement-btn movement-btn--left">◀</button>
+        <button id="right" class="movement-btn movement-btn--right">▶</button>
+        <button id="down" class="movement-btn movement-btn--down">▼</button>
+      </section>
 
-    <section class="movement-btns-container">
-      <button id="up" class="movement-btn movement-btn--up">▲</button>
-      <button id="left" class="movement-btn movement-btn--left">◀</button>
-      <button id="right" class="movement-btn movement-btn--right">▶</button>
-      <button id="down" class="movement-btn movement-btn--down">▼</button>
-    </section>
-
-    <section class="game-stats-container">
-      <p class="a-game-stat">
-        Heals: <span class="a-game-stat--lives" id="lives"></span>
-      </p>
-      <p class="a-game-stat">
-        Time: ⌛ <span class="a-game-stat--time" id="time"></span>
-      </p>
-      <p class="a-game-stat">
-        Record: 🏁 <span class="a-game-stat--record" id="record"></span>
-      </p>
-      <p style="color: aliceblue">
+      <section class="game-stats-container">
+        <p class="a-game-stat">
+          Heals: <span class="a-game-stat--lives" id="lives"></span>
+        </p>
+        <p class="a-game-stat">
+          Time: ⌛ <span class="a-game-stat--time" id="time"></span>
+        </p>
+        <p class="a-game-stat">
+          Record: 🏁 <span class="a-game-stat--record" id="record"></span>
+        </p>
+      </section>
+    </div>
+    <footer>
+      <p class="footer-text">
         Crafted with passion by Altug Can Altun, an aspiring AEH
         student(ID:39253)
       </p>
-    </section>
+    </footer>
 
     <script src="./maps.js"></script>
     <script src="./menus.js"></script>
