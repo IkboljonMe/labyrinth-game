@@ -1,6 +1,6 @@
 # The task is to write a simple maze/labyrinth game - you can use any language/framework to create a game in a mobile version.
 
-1. The game should contain a starting window - the main window. After the game result window and resumption.
+1. The game should contain a starting window - the main window. After the game result window and resumption. ✅
 2. The labyrinth structure should be stored in the form of a table of numbers total.
 3. Each of the numbers specifies the entrances / outputs for a given labyrinth chamber: Bit values determine which door can be passed.
    1 (2^0) - left,
@@ -16,9 +16,3 @@
 7. The end of the game consists in reaching the specific alloy chamber
    value 0.
 8. The start chamber has a bit 4 (2^4).
-
-Additional tasks:
-• Labyrinth generator of any size. – Grade 4
-• Possibility of collecting keys / boards with protected doors. – Grade 5
-• Map of the maze as an element that the user can look at – Grade 56
-# simple-labyryth

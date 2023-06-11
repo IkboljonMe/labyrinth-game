@@ -293,7 +293,7 @@ const mainMenuContainer = document.createElement("div");
 mainMenuContainer.classList.add("game-menu");
 
 const mainMenuTitle = document.createElement("h2");
-mainMenuTitle.innerText = "Labyrinth game";
+mainMenuTitle.innerText = "Simple Maze";
 mainMenuTitle.classList.add("game-menu__item");
 mainMenuTitle.classList.add("game-menu__item--title");
 
