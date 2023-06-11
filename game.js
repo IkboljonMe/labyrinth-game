@@ -115,12 +115,12 @@ function renderMap() {
             game.fillText(emojis["PLAYER"], posX, posY);
             break;
 
-          case "💾":
+          case "🏠":
             giftPos.x = colIndex + 1;
             giftPos.y = rowIndex + 1;
             break;
 
-          case "💣":
+          case "#":
             bombsPos.push(new ItemPos(colIndex + 1, rowIndex + 1));
             break;
         }

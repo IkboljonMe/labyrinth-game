@@ -105,25 +105,30 @@ footer {
 
 /* Movement Btns */
 
+.movement-btns-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.movement-btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .movement-btn {
-  width: 100px;
-  padding: 5px 20px;
-  font-size: 18px;
-  border-radius: 8px;
-  border-color: var(--game-border);
-  background-color: var(--btns-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 40px;
+  font-size: 16px;
 }
-.movement-btn--up,
-.movement-btn--down {
-  display: block;
-  margin: 0px auto;
-  font-size: 19px;
-}
-.movement-btn--left,
-.movement-btn--right,
-.movement-btn--down {
-  margin-top: 5px;
-}
+
 .game-stats-container {
   padding-top: 10px;
   padding-bottom: 10px;
