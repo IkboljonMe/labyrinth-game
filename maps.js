@@ -1,13 +1,10 @@
 "use strict";
-//TASK:
-//• Map of the maze as an element that the user can look at
-//DONE
 const emojis = {
   "-": " ",
   O: "🚪",
-  X: "💣",
-  I: "💾",
-  PLAYER: "🤖",
+  X: "#",
+  I: "🏠",
+  PLAYER: "🚘",
   BOMB_COLLISION: "💥",
   GAME_OVER: "👎",
   WIN: "🏆",
