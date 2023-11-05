@@ -1,18 +1,34 @@
-# The task is to write a simple maze/labyrinth game - you can use any language/framework to create a game in a mobile version.
+# Labyrinth Game
 
-1. The game should contain a starting window - the main window. After the game result window and resumption. ✅
-2. The labyrinth structure should be stored in the form of a table of numbers total.
-3. Each of the numbers specifies the entrances / outputs for a given labyrinth chamber: Bit values determine which door can be passed.
-   1 (2^0) - left,
-   2 (2^1) - right,
-   4 (2^2) - up,
-   8 (2^3) - down.
-4. One -way passage is allowed.
-5. Each of the chambers should be implemented as one screen with
-   four buttons on its edges. Press the button
-   causes a transition to the chamber lying on the side of the screen on which there is a button.
-6. Determining the possibility of moving to the neighboring chamber should be determined
-   The color of the button (you can use graphic elements).
-7. The end of the game consists in reaching the specific alloy chamber
-   value 0.
-8. The start chamber has a bit 4 (2^4).
+A simple Labyrinth game built with JavaScript. This project was task that given by my university. Check it out [task requirements](https://github.com/IkboljonMe/labyrinth-game/blob/main/TASK.md).
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone git@github.com:IkboljonMe/labyrinth-game.git
+```
+
+2. Open the `index.html` file in your web browser to play the game.
+
+## How to Play
+
+- Use the arrow keys or UP, DOWN, LEFT, RIGHT keys to move the player through the labyrinth.
+- Avoid hitting the bombs.
+- Complete each level to win the game.
+
+## Contributing
+
+Contributions to this project are welcome! If you'd like to contribute, please follow these guidelines:
+
+1.  **More labyrinths** If you want to contribute this small project, add more labyrinths in **maps.js** file
+2.  **Pull Requests:** To contribute code or documentation, submit a pull request to the [GitHub repository](https://github.com/IkboljonMe/labyrinth-game/pulls).
+3.  **Coding Standards:** You can optimize my coding standards as it was not fully optimized.
+
+## TODO (contributor-friendly)
+
+- [ ] Add keys to unlock the door.
+- [ ] Add level to this game and change size of maze
+- [ ] Add voice when key pressed or character hits booms
+- [ ] Optimize code
